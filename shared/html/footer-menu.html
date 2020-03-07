@@ -1,0 +1,23 @@
+<div class="row collapse">
+	<span class="spacer left"></span>
+	<ul class="footer-menu small-block-grid-7 right"></ul>
+</div>
+<script>
+
+	var menu 		= $('ul.footer-menu'),
+			markup 	= '',
+			arch, target, title;
+
+	for (i = 1; i < properties.detailInfo['slides'].length; i++) {
+		target  = properties.detailInfo['slides'][i];
+		arch 		= target.arch;
+		title 	= target.title;
+		slug 		= title.toLowerCase().replace(' ', '_');
+
+		markup += '<li>';
+		markup += '	<a href="#'+slug+'" data-href="'+arch+'">'+title+'</a>';
+		markup += '</li>';
+	}
+
+	menu.append(markup);
+</script>

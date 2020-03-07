@@ -1,0 +1,167 @@
+.row.collapse article.row.landscape {
+	margin-left: 0.75rem }
+
+.landscape .tabs-content {
+	height: 100% }
+	.landscape .tabs-content > .content {
+		padding-left: 0;
+		padding-right: 0 }
+
+.landscape .tabbed-content footer {
+	bottom: 0.625rem }
+
+.tabbed-content h4 {
+	text-transform: none;
+	font-weight: lighter;
+	line-height: 1.125;
+	color: black }
+
+.tabbed-content ul[data-videos] figure {
+	margin-top: auto }
+
+.tabbed-content.active {
+	margin-left: -0.625rem;
+	margin-right: -0.625rem }
+
+body:not(.bracketted) .tabbed-content aside + footer {
+	display: none }
+
+	.tabbed-content figure.column,
+	.tabbed-content figure.columns {
+		width: 22.0625rem;
+	  margin-top: auto;
+	  margin-left: 0;
+	  padding: 0 }
+	.tabbed-content h6 {
+		margin-bottom: 0.625rem }
+
+.small-block-grid-3 > li {
+	padding: 0 0.675rem 0.875rem }
+
+button.tabbed,
+.button.tabbed {
+	min-width: 5rem }
+
+.landscape .panel.callout[data-bg] {
+	height: 6.875rem;
+	margin-left: -0.625rem;
+	margin-right: -0.625rem;
+	margin-bottom: 0.625rem;
+}
+.tabbed-content.active ul:not([role="labels"])[data-videos] {
+	max-width: none }
+[data-videos] {
+	margin: auto;
+	padding-top: 0.625rem }
+	[data-videos] figcaption h4{
+		margin-bottom: auto; }
+  [data-video="played"]:after,
+  [data-video="played"]:before {
+  	content: '';
+  	position: absolute }
+  [data-video="played"]:before {
+  	left: calc(50% - 1rem);
+  	top: calc(50% - 1.125rem);
+		border-style: solid;
+		border-width: 1.125rem 0 1.125rem 2.25rem;
+		border-color: transparent transparent transparent #006aa8;
+  	width: 0;
+  	height: 0;
+  	z-index: 1 }
+  [data-video="played"]:after {
+  	left: calc(50% - 2rem);
+  	top: calc(50% - 2rem);
+  	width: 4rem;
+  	height: 4rem;
+  	border-radius: 4rem;
+  	background-color: rgba(255,255,255,0.6);
+  	z-index: 0 }
+  	[data-videos] li:first-of-type [data-video="played"]:after, 
+  	[data-videos] li:first-of-type [data-video="played"]:before {
+	  	margin-top: -0.8125rem }
+  	[data-videos] li:nth-of-type(2) [data-video="played"]:after, 
+  	[data-videos] li:nth-of-type(2) [data-video="played"]:before {
+	  	margin-top: -1.125rem }
+
+		[data-video] a {
+			background-size: cover;
+			background-position: center; }
+		[data-video] img {
+			opacity: 0 }
+		[data-video] video {
+			width: 100%;
+	    height: auto }
+			[data-video] figcaption a {
+				color: inherit;
+				text-decoration: none }
+		[data-video] a img {
+			width: 100% }
+
+
+[data-video] > a, 
+[data-video] video {
+	display: block;
+	max-height: 6.5rem;
+	overflow: hidden;
+	border-radius: 0.3125rem }
+
+[data-video] > a + video {
+	display: none;
+	width: 100vw;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	max-height: none;
+	max-width: none;
+	z-index: 10;
+	background: black;
+}
+
+video::-webkit-media-controls-toggle-closed-captions-button,
+video::-webkit-media-controls-volume-slider,
+video::-webkit-media-controls-fullscreen-button {
+  display: none;
+}
+[data-controls] {
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	z-index: 999;
+}
+
+body.animate .landscape [data-isi-link] {
+	left: 0.5rem }
+
+/*Animation*/
+[data-videos] {
+	opacity: 1 !important;
+	transition: none !important;
+	-webkit-transition: none !important }
+[data-videos] li {
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 500ms;
+	transition-easing: ease-in-out;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 500ms;
+	-webkit-transition-easing: ease-in-out }
+	body.animate ul[data-videos] li {
+		max-height: 15.3125rem;
+		opacity: 1 }
+		body.animate ul[data-videos] li:nth-of-type(2),
+		body.animate ul[data-videos] li:nth-of-type(4) {
+			transition-delay: 50ms;
+			-webkit-transition-delay: 50ms }
+		body.animate ul[data-videos] li:nth-of-type(3),
+		body.animate ul[data-videos] li:nth-of-type(5) {
+			transition-delay: 75ms;
+			-webkit-transition-delay: 75ms }
+		body.animate ul[data-videos] li:last-of-type {
+			transition-delay: 85ms;
+			-webkit-transition-delay: 85ms }
+
+.panel.callout {
+	margin-bottom: 0 }

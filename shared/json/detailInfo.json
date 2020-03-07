@@ -1,0 +1,56 @@
+{
+	"presentation" : "APT-APTIOM",
+	"slides" : [
+		{
+			"arch" : "A05",
+			"title": "Home",
+			"keymessage" : "APT-APTIOM-Home-A05"
+		},
+		{
+			"arch" : "B05",
+			"title": "Patient Profiles",
+			"keymessage" : "APT-APTIOM-Patient_Profiles-B05"
+		},
+		{
+			"arch" : "C05",
+			"title": "Efficacy",
+			"keymessage" : "APT-APTIOM-Efficacy-C05"
+		},
+		{
+			"arch" : "D05",
+			"title": "Adverse Reactions",
+			"keymessage" : "APT-APTIOM-Adverse_Reactions-D05"
+		},
+		{
+			"arch" : "E05",
+			"title": "Dosing",
+			"keymessage" : "APT-APTIOM-Dosing-E05"
+		},
+		{
+			"arch" : "F05",
+			"title": "Formulary Access",
+			"keymessage" : "APT-APTIOM-Formulary_Access-F05"
+		},
+		{
+			"arch" : "G05",
+			"title": "Summary",
+			"keymessage" : "APT-APTIOM-Summary-G05"
+		},
+		{
+			"arch" : "H05",
+			"title": "Video Library",
+			"keymessage" : "APT-APTIOM-Video_Library-H05"
+		}
+	],
+	"hiddenpresentations" : [
+		{
+			"presentation" : "APT-APTIOM-PI",
+			"slides" : [
+			{
+				"arch" : "Z05",
+				"title": "Full Prescription Information",
+				"keymessage" : "APT-APTIOM-PI-Z05"
+			}]
+		}
+	]
+}

@@ -1,0 +1,25 @@
+.landscape .tabs-content {
+  height: 100% }
+
+.landscape ul.disc li {
+  margin-bottom: 0.625rem }
+.landscape ul.asterisk:last-of-type {
+	position: absolute;
+	bottom: 2.25rem }
+
+article.landscape [data-isi-link] {
+	position: absolute;
+	bottom: 0.25rem }
+
+.landscape .prescription {
+	float: right;
+	width: 25.875rem;
+  margin-right: -1.875rem;
+	margin-top: -5.375rem }
+	.landscape .prescription + figcaption h4 {
+		position: absolute;
+		bottom: 7.25rem;
+		text-transform: none;
+		margin-left: 8.625rem;
+		width: 12.5rem;
+		line-height: 1.2 }

@@ -1,0 +1,400 @@
+address {
+	font-style: normal;
+}
+
+h4 {
+	text-transform: none;
+  font-style: italic;
+}
+
+sub {
+  vertical-align: -1px;
+}
+
+sup {
+  vertical-align: 2px;
+}
+
+em {
+	font-weight: 100;
+}
+
+/* Orientation & Orientation Exceptions*/
+@media only screen and (orientation: landscape) {
+	main {
+		height: 100vh;
+	}
+	main > div > section > article {
+		height: 100%;
+	}
+
+	dl > * {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	dd > h3 {
+		position: relative;
+		text-align: center;
+		margin-top: 1.375rem;
+		margin-bottom: 1.375rem;
+	}
+		dd > h3:after,
+		dd > h3:before {
+			content: '';
+			position: absolute;
+			z-index: 1;
+			top: 50%;
+			margin-top: -1px;
+			border-top: solid 1px #0069a7;
+			width: 30%;
+		}
+		dd > h3:before {
+			left: 0;
+		}
+		dd > h3:after {
+			right: 0;
+		}
+
+			dd h3:nth-of-type(1):before,
+			dd h3:nth-of-type(1):after {
+				width: 242px;
+			}
+			/* Usage */
+			dd h3:nth-of-type(2):before,
+			dd h3:nth-of-type(2):after {
+				width: 245px;
+			}
+			/* Dosage and Admin */
+			dd h3:nth-of-type(3):before,
+			dd h3:nth-of-type(3):after {
+				width: 221px;
+			}
+			/* Dosage Forms */
+			dd h3:nth-of-type(4):before,
+			dd h3:nth-of-type(4):after {
+				width: 212px;
+			}
+			/* Contraindications */
+			dd h3:nth-of-type(5):before,
+			dd h3:nth-of-type(5):after {
+				width: 260px;
+			}
+			/* Warnings */
+			dd h3:nth-of-type(6):before,
+			dd h3:nth-of-type(6):after {
+				width: 223px;
+			}
+			/* Adverse Reactions */
+			dd h3:nth-of-type(7):before,
+			dd h3:nth-of-type(7):after {
+				width: 262px;
+			}
+			/* Drug Interactions */
+			dd h3:nth-of-type(8):before,
+			dd h3:nth-of-type(8):after {
+				width: 263px;
+			}
+			/* Use In Specific Pops */
+			dd h3:nth-of-type(9):before,
+			dd h3:nth-of-type(9):after {
+				width: 223px;
+			}
+
+	dt,
+	#medication_guide th {
+		font-size: 1.375rem;
+		color: black;
+	}
+
+	dt {
+	  border-bottom: none;
+	}
+
+	figure, 
+	table, 
+	ol > li, 
+	li > figure:last-child {
+	  margin-bottom: 1.25rem;
+	}
+
+	ol > li:before {
+		margin-right: 0.5rem;
+		float: left;
+	  font-style: normal;
+	  font-weight: bold;
+	  letter-spacing: 0.1px;
+		text-align: right;
+	}
+
+	ol > li > ol {
+		counter-reset: ololNums;
+	}
+
+	ol > li > ol > li:before {
+		counter-increment: ololNums;
+		content: counter(olNums) "." counter(ololNums);
+		font-size: 1.0625rem;
+		line-height: 1.125;
+		color: #0069a7;
+		letter-spacing: 0.1px;
+	}
+
+	ol {
+		list-style-type: none;
+		margin-right: 0.25rem;
+	}
+
+	ol h2 {
+		color: #0069a7;
+	}
+
+	dd > ol {
+		counter-reset: olNums;
+		margin-left: auto;
+	}
+
+	.content.active ol:not([role="labels"]) {
+		max-width: none;
+	}
+
+	dd > ol > li:before {
+		counter-increment: olNums;
+		content: counter(olNums);
+	  font-size: 1.125rem;
+	  line-height: 0.875;
+	  margin-top: auto;
+	  padding-top: 0.125rem;
+	  color: #0069a7;
+	  text-transform: uppercase;
+	}
+
+	ol > li > ul {
+		margin-left: 0.75rem;
+	}
+
+	ol > li h3 {
+		margin-bottom: 0.125rem;
+	}
+
+	p,
+	ol > li > ol > li {
+		margin-bottom: 0.5rem;
+	}
+
+	li > :last-child {
+		margin-bottom: auto;
+	}
+
+		main > div > section > article h2 {
+	    margin: auto auto 0.625rem auto;
+	    padding-top: 0.125rem;
+	    font-size: 1.125rem;
+	    text-align: left;
+		}
+
+
+	dl tbody tr:nth-of-type(even),
+	dl table > tr:nth-of-type(even) {
+		background-color: #dae7f2;
+	}
+
+  td small {
+    font-size: 0.625rem;
+    vertical-align: 1px;
+    line-height: 0;
+  }
+  
+  td ul,
+  td li {
+  	font-size: 0.75rem;
+  }
+
+	th {
+		text-align: center;
+	}
+
+	th.blue,
+	th.empty,
+	th.gold, 
+	th[colspan],
+	th[rowspan] {
+		color: white;
+	}
+
+	th.empty.last {
+		border-bottom: solid 1px #e7e8e8;
+	}
+
+	th.blue {
+		background-color: #0072b1;
+	}
+
+	th.lt-blue {
+		background-color: #bcd6e9;
+	}
+
+	th.gold {
+		background-color: #f6911e;
+	}
+
+	th.empty,
+	td.white {
+		background-color: white;
+	}
+
+	th[colspan] {
+		background-color: #201646;
+	}
+
+	th[rowspan]{
+		background-color:#a6a8ab;
+	}
+
+	.panel.callout[data-bg] {
+		z-index: 2;
+    box-shadow: 0 -1rem 2.5rem white, 
+    						0 -1rem 2.5rem white, 
+    						0 -1rem 2.5rem white, 
+    						0 -1rem 2.5rem white, 
+    						0 -1rem 2.5rem white, 
+    						0 -1rem 2.5rem white, 
+    						0 -1rem 2.5rem white, 
+    						0 -1rem 2.5rem white, 
+    						0 -1rem 2.5rem white, 
+    						0 -1rem 2.5rem white, 
+    						0 -1rem 2.5rem white, 
+    						0 -1rem 2.5rem white, 
+    						0 -1rem 2.5rem white, 
+    						0 -1rem 2.5rem white, 
+    						0 -1rem 2.5rem white;
+  }
+	
+	.figure, 
+	.table {
+		min-width:273px; 
+		max-width:80%;
+	}
+
+	.molecule {
+		min-width: 89px;
+		max-width: 33.3334%;
+	}
+
+	.tabs-content {
+		height: calc(100vh - 1.875rem);
+	}
+
+	.tabbed-content.active {
+		height: calc(100% - 7.875rem);
+		width: 100%;
+	}
+
+	.tabbed-content dl, 
+	.tabbed-content dt, 
+	.tabbed-content dd {
+		display: block;
+		width: 100%;
+	}
+
+	.tabbed-content dl:last-of-type {
+		margin-bottom: auto;
+	}
+
+	.tabbed-content dl:last-of-type dd {
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+
+	.tabbed-content h5 {
+		width: auto;
+		background-color: transparent;
+		padding: 0;
+		margin-bottom: 0.25rem;
+	}
+
+	#logo-bial {
+		height: 0.75rem;
+		width: auto;
+	}
+
+	#section_8-2 {
+		visibility: hidden;
+	  width: 0;
+	  float: left;
+	}
+
+	#pi-wrapper {
+		position: relative;
+		z-index: 1;
+		overflow: visible;
+	}
+
+	#pi-scroll {
+		position: absolute;
+		z-index: 999;
+	}
+	
+	#medication_guide {
+		max-width: none;
+	}
+
+	#medication_guide address {
+		font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 1.125;
+    margin-bottom: 0.125rem;
+    text-rendering: optimizeLegibility;
+	}
+
+	#medication_guide h3,
+	#medication_guide h4,
+	#medication_guide p,
+	#medication_guide li {
+		text-align: left;
+	}
+
+	#medication_guide th {
+		background-color: transparent;
+		border-top: solid 1px #e7e8e8;
+	}
+
+	#medication_guide tfoot td {
+		padding: 0.625rem 0.75rem 0.3125rem 0.75rem;
+		border-bottom: solid 1px #e7e8e8;
+	}
+
+	#medication_guide td, 
+	#medication_guide th {
+		border-left: solid 1px #e7e8e8;
+		border-right: solid 1px #e7e8e8;
+	}
+
+	#medication_guide ol {
+		list-style: outside decimal;
+	}
+
+		#medication_guide ol li{
+			font-weight: bold;
+		}
+
+		#medication_guide ul li{
+			font-weight: 300;
+		}
+
+	#medication_guide ul.column {
+		margin-left: auto;
+	}
+	#medication_guide	ul.circle li:before,
+	#medication_guide ul.disc li:before {
+	  font-size: 0.75rem;
+	}
+	#medication_guide	ul.circle li:before,
+	#medication_guide ul.disc li ul li:before{
+		content:'◦';
+	}
+	.undent {
+    margin-left: -0.3125rem;
+  }
+
+}
